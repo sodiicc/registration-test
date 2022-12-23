@@ -1,0 +1,167 @@
+.header {
+  height: 80px;
+  background-color: #746;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  a {
+    margin: 10px 30px;
+  }
+
+  button {
+    color: #746;
+    background-color: #fff;
+  }
+}
+
+.profile {
+
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 20px;
+  }
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.user-info {
+
+  span {
+    color: darkgreen;
+    font-weight: bold;
+  }
+}
+
+.main {
+  font-size: 32px;
+  text-align: center;
+}
+
+.registration, .login, .profile {
+  text-align: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin: 0 20px;
+  background-color: #746;
+  color: rgb(241, 224, 224);
+  border-radius: 5px;
+  min-width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-color: #0000;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: white;
+    color: #746;
+    border-color: #746;
+    transition: 0.25s;
+  }
+
+  &:disabled {
+    background-color: grey;
+    color: white;
+    border-color: #0000;
+    cursor: initial;
+  }
+}
+
+form {
+  width: 400px;
+  background-color: white;
+  box-shadow: 10px 10px 22px 0px #0006;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 15px 25px;
+
+  .block {
+    margin: 15px;
+  }
+  
+  .buttons {
+    margin-top: 35px;
+  }
+
+  .error {
+    color: rgb(218, 42, 42);
+    height: 14px;
+  }
+  
+  input {
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 15px;
+  }
+}
+
+.success {
+  color: green;
+  text-align: center;
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0008;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .loader:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+}
+
+a {
+  color: aliceblue;
+  font-style: italic;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
